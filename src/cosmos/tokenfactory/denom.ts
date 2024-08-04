@@ -1,7 +1,7 @@
 /* eslint-disable */
 import { BinaryReader, BinaryWriter } from "../../binary";
 import { isSet, DeepPartial, Exact } from "../../helpers";
-export const protobufPackage = "tokenfactory";
+export const protobufPackage = "tokenfactory.tokenfactory";
 export interface Denom {
   denom: string;
   ticker: string;
@@ -19,7 +19,7 @@ function createBaseDenom(): Denom {
   };
 }
 export const Denom = {
-  typeUrl: "/tokenfactory.Denom",
+  typeUrl: "/tokenfactory.tokenfactory.Denom",
   encode(message: Denom, writer: BinaryWriter = BinaryWriter.create()): BinaryWriter {
     if (message.denom !== "") {
       writer.uint32(10).string(message.denom);

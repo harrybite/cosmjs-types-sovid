@@ -1,14 +1,14 @@
 /* eslint-disable */
 import { BinaryReader, BinaryWriter } from "../../binary";
 import { DeepPartial, Exact } from "../../helpers";
-export const protobufPackage = "tokenfactory.tokenfactory";
+export const protobufPackage = "identity.identity";
 /** Params defines the parameters for the module. */
 export interface Params {}
 function createBaseParams(): Params {
   return {};
 }
 export const Params = {
-  typeUrl: "/tokenfactory.tokenfactory.Params",
+  typeUrl: "/identity.identity.Params",
   encode(_: Params, writer: BinaryWriter = BinaryWriter.create()): BinaryWriter {
     return writer;
   },

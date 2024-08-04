@@ -1,7 +1,7 @@
 /* eslint-disable */
 import { BinaryReader, BinaryWriter } from "../../../binary";
 import { isSet, DeepPartial, Exact } from "../../../helpers";
-export const protobufPackage = "tokenfactory.tokenfactory.module";
+export const protobufPackage = "identity.identity.module";
 /** Module is the config object for the module. */
 export interface Module {
   /** authority defines the custom module authority. If not set, defaults to the governance module. */
@@ -13,7 +13,7 @@ function createBaseModule(): Module {
   };
 }
 export const Module = {
-  typeUrl: "/tokenfactory.tokenfactory.module.Module",
+  typeUrl: "/identity.identity.module.Module",
   encode(message: Module, writer: BinaryWriter = BinaryWriter.create()): BinaryWriter {
     if (message.authority !== "") {
       writer.uint32(10).string(message.authority);
